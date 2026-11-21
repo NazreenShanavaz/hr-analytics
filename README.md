@@ -1,80 +1,67 @@
-# HR Analytics: Employee Attrition and Workforce Analysis
+Markdown
+# HR Analytics: Employee Attrition & Workforce Analysis
 
-## 1. Project Overview
-
-Employee attrition is an important challenge for organizations because employee turnover can affect productivity, recruitment costs, workforce stability, and employee morale.
-
-This project explores employee attrition using the IBM HR Analytics Employee Attrition & Performance dataset. The goal is to identify patterns in employee turnover and examine how attrition varies across demographic characteristics, job roles, job satisfaction, work conditions, compensation, and tenure.
-
-Using Python, Pandas, NumPy, Matplotlib, and Seaborn, this project applies data cleaning, exploratory data analysis (EDA), descriptive statistics, and data visualization to uncover insights that may help organizations investigate employee retention challenges.
-
-**Project type:** Exploratory Data Analysis (EDA)
-
-**Domain:** Human Resources Analytics
-
-**Primary objective:** Understand employee attrition patterns and develop data-informed recommendations for employee retention.
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=flat-square&logo=pandas&logoColor=white)
+![Matplotlib & Seaborn](https://img.shields.io/badge/Visualization-Matplotlib%20%7C%20Seaborn-4C72B0?style=flat-square)
+![Power BI](https://img.shields.io/badge/Power%20BI-Interactive%20Dashboard-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+![Domain](https://img.shields.io/badge/Domain-HR%20Analytics-2E8B57?style=flat-square)
 
 ---
 
-## 2. Business Problem
+## 1. Executive Summary & Project Overview
 
-Organizations need to understand which employee groups experience higher attrition and which workforce characteristics are associated with employees leaving.
+Employee attrition presents a critical operational and financial challenge for organizations, directly impacting productivity, recruitment expenses, workforce stability, and team morale.
 
-This project investigates the following questions:
+This project conducts an end-to-end **Exploratory Data Analysis (EDA)** on the **IBM HR Analytics Employee Attrition & Performance** dataset to uncover key drivers of employee turnover across demographics, job roles, satisfaction metrics, working conditions, compensation, and tenure.
 
-- What proportion of employees have left the organization?
-- How does attrition vary across departments and job roles?
-- Is attrition associated with employee age and years at the company?
-- How does job satisfaction relate to attrition?
-- How does working overtime relate to employee turnover?
-- How do business travel frequency and distance from home relate to attrition?
-- How does monthly income differ between employees who stayed and those who left?
-- How are environmental satisfaction, relationship satisfaction, and work-life balance associated with attrition?
-- How does attrition vary by stock option level, number of companies previously worked for, and time since the last promotion?
-- Which employee groups may warrant further investigation to support retention efforts?
+* **Project Type:** Exploratory Data Analysis (EDA)
+* **Domain:** Human Resources Analytics
+* **Primary Objective:** Identify high-attrition employee segments and translate statistical patterns into actionable, data-informed retention recommendations.
 
 ---
 
-## 3. Dataset
+## 2. Business Questions
 
-**Dataset name:** IBM HR Analytics Employee Attrition & Performance
+To guide the investigation into workforce turnover, this analysis addresses the following core questions:
 
-**File used:** `employee_attrition.csv`
-
-The dataset contains employee-level information, including:
-
-- Employee demographics
-- Department and job role
-- Monthly income and compensation-related information
-- Job satisfaction and environmental satisfaction
-- Work-life balance
-- Overtime and business travel
-- Years at the company and total working experience
-- Number of companies previously worked for
-- Years since the last promotion
-- Stock option level
-- Employee attrition status
-
-The original dataset contains **1,470 rows and 35 columns**.
-
-The target variable for this analysis is `Attrition`, which indicates whether an employee left the organization (`Yes`) or stayed (`No`).
+1. **Overall Baseline:** What proportion of employees have left the organization?
+2. **Organizational & Role Impact:** How does attrition vary across departments and individual job roles?
+3. **Demographics & Tenure:** How are employee age and years at the company associated with turnover?
+4. **Workplace Satisfaction:** How do job satisfaction, environment satisfaction, relationship satisfaction, and work-life balance relate to attrition?
+5. **Workload & Travel:** How do overtime, business travel frequency, and commuting distance correlate with employees leaving?
+6. **Compensation & Career Progression:** How do monthly income, stock option levels, promotion history, and prior employers differ between retained and departing employees?
+7. **Target Segments:** Which employee groups warrant prioritized investigation to strengthen retention efforts?
 
 ---
 
-## 4. Tools and Technologies
+## 3. Dataset Description
 
-- **Python:** Data analysis and manipulation
-- **Pandas:** Data cleaning, grouping, aggregation, and cross-tabulation
-- **NumPy:** Numerical operations
-- **Matplotlib:** Data visualization
-- **Seaborn:** Statistical charts and visual exploration
-- **Jupyter Notebook:** Organizing and documenting the analysis
-- **Visual Studio Code:** Development environment
-- **Git and GitHub:** Version control and project portfolio
+* **Dataset:** IBM HR Analytics Employee Attrition & Performance (`employee_attrition.csv`)
+* **Dimensions:** 1,470 employee records across 35 original features
+* **Target Variable:** `Attrition` (`Yes` = left the organization; `No` = stayed)
+
+**Feature Categories Covered:**
+* **Demographics:** Age, gender, marital status, education level, education field, distance from home
+* **Role & Department:** Department, job role, job level, business travel, overtime
+* **Compensation:** Monthly income, daily/hourly/monthly rates, percent salary hike, stock option level
+* **Tenure & Career History:** Years at company, total working years, years in current role, years since last promotion, years with current manager, number of companies worked
+* **Satisfaction & Engagement:** Job satisfaction, environment satisfaction, relationship satisfaction, job involvement, work-life balance, performance rating
 
 ---
 
-## 5. Project Structure
+## 4. Tech Stack & Tools
+
+* **Programming Language:** Python
+* **Data Manipulation & Analysis:** Pandas, NumPy
+* **Data Visualization:** Matplotlib, Seaborn
+* **Business Intelligence & Dashboarding:** Power BI, DAX
+* **Environment & Workflow:** Jupyter Notebook, Visual Studio Code
+* **Version Control:** Git, GitHub
+
+---
+
+## 5. Repository Structure
 
 ```text
 hr-analytics/
@@ -86,21 +73,25 @@ hr-analytics/
 │   ├── hr_analytics.ipynb
 │   └── hr_analytics_final.ipynb
 │
+├── powerbi/
+│   └── hr_analytics_dashboard.pbix
+│
 ├── outputs/
+│   └── visualizations/
 │
 └── README.md
 ```
-
 **Folder descriptions:**
 
 - `data/` contains the dataset used for analysis.
 - `notebooks/` contains the original analysis notebook and the final, polished notebook.
 - `outputs/` is reserved for exported charts, tables, or other project outputs.
+- `powerbi/` contains the Power BI dashboard file (.pbix).
 - `README.md` documents the project, methodology, findings, and recommendations.
 
 The original notebook is retained as a backup. The final notebook is intended to contain the organized, presentation-ready analysis.
 
----
+
 
 ## 6. Data Cleaning and Preparation
 
