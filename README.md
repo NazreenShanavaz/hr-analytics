@@ -1,8 +1,10 @@
+Markdown
 # HR Analytics: Employee Attrition & Workforce Analysis
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=flat-square&logo=pandas&logoColor=white)
 ![Matplotlib & Seaborn](https://img.shields.io/badge/Visualization-Matplotlib%20%7C%20Seaborn-4C72B0?style=flat-square)
+![Power BI](https://img.shields.io/badge/Power%20BI-Interactive%20Dashboard-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![Domain](https://img.shields.io/badge/Domain-HR%20Analytics-2E8B57?style=flat-square)
 
 ---
@@ -73,9 +75,6 @@ hr-analytics/
 │
 ├── powerbi/
 │   └── hr_analytics_dashboard.pbix
-│
-├── images/
-│   └── hr_dashboard.png
 │
 ├── outputs/
 │   └── visualizations/
