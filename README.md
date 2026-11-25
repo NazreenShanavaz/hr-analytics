@@ -21,7 +21,10 @@ This project conducts an end-to-end analysis of the **IBM HR Analytics Employee 
 * **Primary Objective:** Identify high-attrition employee segments and translate statistical patterns into actionable, data-informed retention recommendations.
 
 ---
+## Dashboard Preview
 
+![HR Analytics Dashboard](powerbi/Dashboard_screanshot.png)
+----
 ## 2. Business Questions
 
 To guide the investigation into workforce turnover, this analysis addresses the following core questions:
