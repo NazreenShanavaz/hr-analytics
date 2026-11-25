@@ -579,7 +579,7 @@ pip install pandas numpy matplotlib seaborn jupyter
 ### Run the notebook
 
 1. Clone or download this repository.
-2. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset). The file is usually named `WA_Fn-UseC_-HR-Employee-Attrition.csv`.
+2. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset).
 3. Save it as `data/employee_attrition.csv` (create the `data/` folder if it doesn't exist).
 4. Open the project folder in Visual Studio Code.
 5. Open `notebooks/hr_analytics_final.ipynb`.
