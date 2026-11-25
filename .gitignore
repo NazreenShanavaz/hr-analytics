@@ -1,0 +1,5 @@
+# Raw dataset (download from Kaggle, see README)
+data/employee_attrition.csv
+
+# Generated cleaned dataset
+notebooks/hr_attrition_clean.csv
